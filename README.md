@@ -13,8 +13,8 @@ $ sfdisk -d /dev/sdX > table
 Restore the partition table to /dev/sdY and /dev/sdZ
 
 ````bash
-$ sfdisk  /dev/sdY < table
-$ sfdisk  /dev/sdZ < table
+$ sfdisk /dev/sdY < table
+$ sfdisk /dev/sdZ < table
 ````
 ## Install Grub
 ````bash
