@@ -23,12 +23,6 @@ Restore the partition table to /dev/sdY and /dev/sdZ
 $ sfdisk /dev/sdY < table
 $ sfdisk /dev/sdZ < table
 ````
-## Install Grub
-````bash
-$ grub-install /dev/sdY
-$ grup-install /dev/sdZ
-````
-
 Clone BIOS and UEFI partitions
 ````bash
 $ dd if=/dev/sdX1 of=/dev/sdY1
@@ -36,7 +30,11 @@ $ dd if=/dev/sdX1 of=/dev/sdZ1
 $ dd if=/dev/sdX2 of=/dev/sdY2
 $ dd if=/dev/sdX2 of=/dev/sdZ2
 ````
-
+Install Grub
+````bash
+$ grub-install /dev/sdY
+$ grub-install /dev/sdZ
+````
 # Convert Proxmox Logical volumes to raid5
 
 Extend Volume group
