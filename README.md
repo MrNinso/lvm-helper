@@ -66,7 +66,7 @@ Now let's convert to a Thinpool
 $ lvconvert --thinpool pve/data --poolmetadata meta_data
 ```
 
-# Convert root and swap Logical volumes
+## Convert root and swap Logical volumes
 
 First you need to convert from linear to raid1
 
@@ -86,7 +86,7 @@ $ lvconvert --stripes 2 pve/swap
 
 Wait for sync and enjoy your raid5 in proxmox :)
 
-# (Optional) Grow root Logical Volume
+## (Optional) Grow root Logical Volume
 ````bash
 $ xfs_growfs /dev/pve/root
 ````
