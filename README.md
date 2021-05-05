@@ -3,6 +3,13 @@
 - Using xfs
 - Using raid5 over lvm2
 
+# Note
+In this tutorial let's use:
+- /dev/sdX for the proxmox installed disk
+- /dev/sdY and /dev/sdZ for the other 2 disks for raid 5
+
+you may use this tutorial for other raid levels (like raid1, raid6, raid0, etc...), but I only tested in raid5, so good luck  
+
 # Copy Partition Table
 Get the /dev/sdX partition table to a file
 
