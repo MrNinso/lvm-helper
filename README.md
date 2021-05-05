@@ -1,9 +1,6 @@
-# How I configure proxmox
+# How to convert proxmox xfs/ext4 Install to raid5
 
-- Using xfs
-- Using raid5 over lvm2
-
-# Note
+## Note
 In this tutorial let's use:
 - /dev/sdX for the proxmox installed disk
 - /dev/sdY and /dev/sdZ for the other 2 disks for raid 5
